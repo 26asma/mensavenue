@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Avenue|About</title>
+    <link rel="icon" type="image/icon" href="assets/favicon-32x32.png">
+    
+    <script src="https://kit.fontawesome.com/9fdb3dd115.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            text-transform: capitalize;
+            box-sizing: border-box;
+            font-family: "Briem Hand", cursive;
+        }
+        .container{
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-rows: 2;
+}
+nav{
+    grid-area: 'nav';
+    grid-column-start: 1;
+    grid-column-end: 4;
+width: 100%;
+    background-color: rgb(221, 180, 104);
+    color: white;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 70px;
+     padding: 10px;
+}
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    gap:60px ;
+    align-items: center;
+}
+.nav-branding{
+    font-size: 2rem;
+text-decoration: none;
+color: rgb(66, 46, 7);
+}
+.nav-link{
+    transition: 0.7s ease;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    width: 25px;
+    display: block;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    /* background-color: rgb(66, 46, 7); */
+}
+
+nav ul {
+  
+    display: flex;
+    gap: 40px;
+    /* justify-content: space-around; */
+}
+nav ul a{
+ color: rgb(39, 17, 2);
+font-size: 1.5rem;
+padding: 10px;
+    text-decoration: none;
+}
+nav ul a:hover,.active{
+    color: white;
+    background:rgb(77, 39, 14) ;
+}
+nav ul li{
+    list-style: none;
+}
+nav button{
+    width: 150px;
+    height:50px;
+    border: none;
+    background: rgb(77, 39, 14);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 8px;
+}
+ button:hover{
+    color: rgb(77, 39, 14);
+    background: white;
+    /* background-color: white; */
+    font-size: 1.6rem;
+}
+nav .logo{
+    color: rgb(39, 17, 2);
+    font-size: 2rem;
+}
+nav{
+    grid-column-start: 1;
+    grid-column-end:5; 
+}
+.item1{
+    grid-column-start: 1;
+    grid-column-end:3 ;
+    padding: 30px 0;
+    justify-self: center;
+    align-self: center;
+}
+.item2{
+    grid-column-start: 3;
+    grid-column-end: 5;
+   
+    padding: 30px 20px;
+    line-height: normal;
+}
+ h1{
+    padding: 20px;
+    font-size: 30px;
+}
+ /* p{
+    padding: 10px;
+    font-size: 18px;
+} */
+ button{
+    width: 150px;
+    height:50px;
+    border: none;
+    background: rgb(77, 39, 14);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 8px;  
+    margin: 20px;
+}
+.item3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 30px 20px;
+    line-height: normal;
+   
+}
+.item3 p{
+    padding: 30px;
+    font-size: 18px;
+}
+.item4{
+    grid-column-start: 3;
+    grid-column-end: 5; 
+    align-self: center;
+    justify-self: center;
+   
+}
+.item4 img{
+    height: 600px;
+}
+.item5{
+    grid-column-start: 1;
+    grid-column-end: 3; 
+    align-self: center;
+    justify-self: center;
+}
+.item5 img{
+    height: 800px;
+}
+.item6{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    padding: 70px 20px;
+    line-height: normal;
+}
+.item7{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 70px 20px;
+    line-height: normal;
+}
+.item8{
+    grid-column-start: 3;
+    grid-column-end: 5;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+    
+
+}
+.item8 img{
+padding: 15px;
+}
+
+
+    footer i{
+        color: rgb(14, 13, 13);
+        padding: 30px;
+    }
+    footer{
+  
+    margin-top: 40px;
+    /* background-color: #29201660; */
+    background-color: rgb(221, 180, 104);
+    
+ 
+    grid-column-start: 1;
+    grid-column-end: 5;
+    
+    }
+    .shop-info{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+     
+    }
+    .shop{
+padding: 50px;
+width: 50%;
+    }
+    .info{
+     justify-content: flex-end;  
+     width: 50%;
+     padding: 50px;
+     
+    }
+    .link-gallery{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .link{
+        padding: 50px;
+        width: 50%;
+      
+            }
+            .link h3{
+                padding-bottom: 10px;
+            }
+            .link  ul li{
+                list-style: none;
+                padding: 5px;
+            }
+            .link ul li a{
+text-decoration: none;
+color:black ;
+            }
+            .link a::before{
+                position: relative;
+                content: "\f105";
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                margin-right: 10px;
+            }
+            .gallery{
+             /* justify-content: flex-end;    */
+             width: 50%;
+             padding: 50px;
+             display: flexbox;
+             
+            }
+            .gallery h3{
+                padding-bottom: 30px;
+            }
+            .gallery img{
+                width: 100px;
+                height: 100px;
+            }
+    
+    footer h2{
+        color: rgb(10, 9, 9);
+        font-size: 40px;
+        font-weight: 900;
+    }
+    .end {
+        color: rgb(10, 10, 10);
+        font-size: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* padding-bottom: 20px; */
+    }
+    .copy{
+        padding: 10px; 
+        font-size: 15px;
+    }
+    .social{
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    }
+    /* footer p{
+        color: rgb(10, 10, 10);
+        padding: 5px;
+        font-weight: 600;
+    } */
+     .last {
+        display: flex; 
+        flex-wrap: wrap;
+        
+    }
+    .bot{
+        display: flex;
+        justify-content: end;
+    }
+    .bot a{
+        text-decoration: none;
+        color: rgb(19, 19, 19);
+        padding: 0 20px;
+        border-right:2px solid gray ;
+    }
+    footer i{
+        color: rgb(14, 13, 13);
+         padding: 10px; 
+        
+    }
+    
+    
+    @media screen and (max-width:900px){
+        nav{
+            width: 100vw;
+        }
+        .menu ul li a{
+            display: none;
+        }
+        .logo{
+            font-size: 20px;
+        }
+        .buy button{
+            padding: 0;
+        }
+        .item1,.item2,.item3,.item4,.item5,.item6
+        {
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        .item3{
+            grid-row-start: 5;
+            grid-row-end:5 ;
+            grid-column-start: 1;
+            grid-column-end: 5;
+        }
+        .item4{
+            grid-row-start: 4;
+            grid-row-end:4 ;
+            grid-column-start: 1;
+            grid-column-end: 5;
+    }
+    .item8{
+        grid-row-start: 8;
+            grid-row-end:9 ;
+            grid-column-start: 1;
+            grid-column-end: 5;
+    }
+    .item7{
+        grid-row-start: 9;
+            grid-row-end:9 ;
+            grid-column-start: 1;
+            grid-column-end: 5;
+    }
+}
+@media(max-width:768px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+        
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+        
+    }
+    .nav-menu{
+       position: fixed;
+       left: -100%;
+       top:70px ;
+       gap: 0;
+       flex-direction: column;
+       background: rgb(253, 251, 251);
+       color: rgb(77, 39, 14);
+       width: 100%;
+       text-align: center;
+       transition: 0.3s;
+    }
+    .nav-item{
+margin:16px 0;
+
+    }
+    .nav-menu.active{
+        left: 0;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+         justify-content: center; 
+         align-items: center; 
+       } 
+       .imgbox{
+        padding: 30px;
+       }
+       .textbox{
+        width: 100%;
+        padding: 30px;
+       }
+       .next2 h2{
+font-size: 1.5rem;
+       }
+       .next h2{
+        font-size: 1.5rem;
+       }
+       .both h6{
+        font-size: 0.5rem; 
+     }
+    }
+@media screen and (max-width:720px) {
+    .shop-info{
+    display: flex;
+    flex-direction: column;
+  }
+   .shop{
+    width: 100%;
+   }
+   .info{
+    width: 100%;
+   }
+   .link-gallery{
+    display: flex;
+    flex-direction: column;
+  }
+   .link{
+    width: 100%;
+   }
+   .gallery{
+    width: 100%;
+   }
+ 
+ 
+
+}
+@media screen and (max-width:550px){
+    .buy button{
+        display: none;
+    }
+    .container img{
+        width: 300px;
+        height: 300px;
+    }
+
+    .item8 img{
+        width: 400px;
+        height: 400px;
+        padding: 0;
+
+    }
+}
+@media screen and (max-width:500px){
+    .container img{
+        width: 200px;
+        height: 200px;
+    }
+    nav .logo{
+        font-size: 20px;
+        width: 100%;
+    }
+   
+    .item8 img{
+        width: 90px;
+        height: 90px;
+    } 
+
+     footer {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        
+  
+    }
+    .item1,.item2,.item3,.item4,.item5,.item6,.item7,.item8,footer{
+        width: 100vw;
+       
+      
+    }
+    .item1,.item4,.item5,.item8 {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .item6,.item2,.item3,.item7{
+        padding: 0;
+        width: 100vw;
+        margin-bottom: 50px;
+        padding: 10px;
+    }
+    /* footer h2
+    {
+        padding: 0;
+        margin: 0;
+    }
+    footer p{
+        padding: 0;
+        margin: 0;
+    } */
+}
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <nav class="navbar">
+            <a href="#" class="nav-branding">mens' avenue</a>
+            <ul class="nav-menu ">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">about</a>
+                </li>
+                <li class="nav-item">
+                    <a href="collection.html" class="nav-link">collections</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        
+        <div class="item1"><img src="assets/about1.avif" alt="">
+        </div>
+            <div class="item2">
+                <h1>"Discover Timeless Elegance: Men's Avenue – Where Style Meets Distinction"</h1>
+                <p>Welcome to Men's Avenue, where style meets distinction in every stitch. Step into our realm of refined masculinity, where the art of dressing is elevated to an unmatched experience. At Men's Avenue, we pride ourselves on offering the finest selection of men's wear, curated with precision and passion.
+
+                Indulge in the timeless elegance of our Kurta Jubbas, where tradition meets contemporary flair. Crafted from the finest fabrics and adorned with exquisite embellishments, each Kurta Jubba is a masterpiece of craftsmanship. Whether you're attending a festive celebration or a formal event, our collection offers a diverse range of styles to suit every occasion. From classic silhouettes to modern interpretations, our Kurta Jubbas exude sophistication and charm, making a statement wherever you go.
+                
+                At Men's Avenue, we understand that true style is not just about what you wear, but how you wear it. Our expert stylists are dedicated to providing personalized service, guiding you through our collection to help you find the perfect ensemble that reflects your unique personality and taste. Experience the epitome of elegance and refinement – welcome to Men's Avenue, your premier destination for men's fashion. </p><button>read more</button></div>
+                <div class="item3">
+                    <h1>"Groom in Style: Unveiling Men's Avenue's Dashing Attire Collection"</h1>
+                    <p>Explore Men's Avenue for a diverse collection of grooms' attire that combines sophistication with style. From classic groom suits to intricately detailed sherwanis, our selection caters to every groom's taste. With precision crafting and attention to detail, each garment promises a perfect fit and comfort on your special day. Find your ideal groom attire at Men's Avenue, where timeless elegance meets modern refinement.</p>
+                    <p>At Men's Avenue, we're dedicated to ensuring every groom shines on their special day. Our carefully curated collection of groom attire blends classic sophistication with modern flair, offering a range of options to suit diverse styles and preferences. Whether it's a timeless suit or a traditional sherwani, each garment is expertly crafted for a perfect fit and unparalleled comfort. Elevate your wedding day ensemble with Men's Avenue, where impeccable style meets unmatched quality.</p>
+                    <button>read more</button>
+                </div>
+    <div class="item4"><img src="assets/abt3.jpeg" alt=""></div>
+    <div class="item5">
+        <img src="assets/abt4.jpeg" alt="">
+    </div>
+    <div class="item6"><h1>"Kids' Fashion Wonderland: Explore Men's Avenue's Vibrant Collection"</h1>
+    <p>Step into the whimsical world of kids' fashion at Men's Avenue, where style meets playfulness in every stitch. Our kids' section is a treasure trove of adorable ensembles crafted with comfort and durability in mind. From charming little suits for formal occasions to playful outfits for everyday adventures, we have something for every little one. With a focus on quality materials and trendy designs, our collection ensures that your child looks and feels their best, no matter the occasion. Explore the joy of dressing up your little fashionistas with Men's Avenue, where every outfit is a delightful expression of childhood wonder.</p>
+<p>Dive into the delightful world of kids' fashion at Men's Avenue, where style meets comfort in every ensemble. Our kids' section boasts a vibrant array of outfits designed to cater to every occasion and personality. From charming dresses and smart suits to casual, everyday wear, each piece is crafted with care to ensure durability and ease of movement. Let your little ones express their unique personalities through our curated collection, where playful designs and quality materials come together seamlessly. Discover the joy of dressing up your mini trendsetters with Men's Avenue, where fashion meets fun for kids of all ages.</p>
+<button>read more</button></div>
+<div class="item7">
+    <h1>"Sacred Serenity: Discover Ehram Attire at Men's Avenue"</h1>
+    <p>Step into the serene realm of ehram attire at Men's Avenue, where spirituality meets style in perfect harmony. Our ehram section offers a tranquil selection of garments crafted with utmost reverence for pilgrimage and sacred journeys. From soft, breathable fabrics to thoughtfully designed styles, each piece is tailored to ensure comfort and ease during religious rites. Whether embarking on Hajj or Umrah, our collection provides pilgrims with dignified attire that honors tradition while embracing modern convenience. Explore the essence of spiritual elegance with Men's Avenue, where every ehram garment is a testament to reverence and respect.</p>
+    <button>read more</button>
+</div>
+<div class="item8">
+    <img src="assets/abt7.jfif" alt="">
+    <img src="assets/ehram1.jfif" alt="">
+    <img src="assets/ehram3.jfif" alt="">
+    <img src="assets/ehram5.jfif" alt="">
+</div>
+</div>
+<footer>
+    <div class="shop-info">
+   <div class="shop">
+    <h2>men's Avenue</h2>
+    <p>kurta,jubba,sherwani,pilgrims wear & kids wear. </p>
+    <p>open:10-00am - 10-00pm</p>
+<p>friday holiday</p>
+</div>
+<div class="info">
+    <h3>Vanaikar Mohammed Aslam</h3>
+    <p>no.1/16, V.L Nawaz street,Ambur,chennai,India</p>
+    <p>+91-9365877727</p>
+    <p>mensavenue@gmail.com</p>
+</div>
+</div> 
+<div class="link-gallery">
+<div class="link">
+    <h3>quick links</h3>
+    <ul>
+    <li><a href="index.html">home</a></li>
+    <li><a href="about.html">about</a></li>
+    <li><a href="collection.html">collections</a></li>
+    <li><a href="contact.html">contact</a></li></ul>
+</div>
+<div class="gallery">
+    <h3>gallery</h3>
+    <img src="assets/about1.avif" alt="">
+    <img src="assets/about2.jpeg" alt="">
+    <img src="assets/model1.jpg" alt="">
+    <img src="assets/model2.jpg" alt="">
+    <!-- <img src="assets/model3.jpg" alt="">
+    <img src="assets/model6.jpg" alt=""> -->
+</div>
+</div> 
+<div class="end">
+    <div class="copy">
+        <p>&copy men's avenue,All Right Reserved.Designed by Asma</p>
+    </div>
+    <div class="social">
+        <!-- <p>connect with us now</p> -->
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-youtube"></i>
+    </div>
+</div>
+
+
+
+
+    <div class="bot">
+
+        <a href="#">home</a>
+        <a href="#">cookies</a>
+        <a href="#">help</a>
+        <a href="#">FAQs</a>
+    </div>
+    
+
+</footer>
+<script src="java.js"></script>
+</body>
+</html>

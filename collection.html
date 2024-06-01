@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/icon" href="assets/favicon-32x32.png">
+    <title>Men's Avenue|collections</title>
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            text-transform: capitalize;
+    box-sizing: border-box;
+ font-family: "Briem Hand", cursive;
+        }
+        .container{
+    display: grid;
+    grid-template-columns: 4;
+    grid-template-rows: 2;
+}
+nav{
+    grid-area: 'nav';
+    grid-column-start: 1;
+    grid-column-end: 3;
+width: 100%;
+    background-color: rgb(221, 180, 104);
+    color: white;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     height: 70px;
+     padding: 10px;
+}
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    gap:60px ;
+    align-items: center;
+}
+.nav-branding{
+    font-size: 2rem;
+text-decoration: none;
+color: rgb(66, 46, 7);
+}
+.nav-link{
+    transition: 0.7s ease;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    width: 25px;
+    display: block;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+    /* background-color: rgb(66, 46, 7); */
+}
+
+nav ul {
+  
+    display: flex;
+    gap: 40px;
+    /* justify-content: space-around; */
+}
+nav ul a{
+ color: rgb(39, 17, 2);
+font-size: 1.5rem;
+padding: 10px;
+    text-decoration: none;
+}
+ ul a:hover , .active{
+    color: white;
+    background:rgb(77, 39, 14) ;
+}
+nav ul li{
+    list-style: none;
+}
+nav button{
+    width: 150px;
+    height:50px;
+    border: none;
+    background: rgb(77, 39, 14);
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 8px;
+}
+nav button:hover{
+    color: rgb(77, 39, 14);
+    background: white;
+    /* background-color: white; */
+    font-size: 1.6rem;
+}
+nav .logo{
+    color: rgb(39, 17, 2);
+    font-size: 2rem;
+}
+ .item1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+    /* background:rgba(102, 73, 46, 0.623); */
+   
+    
+} 
+.item1 ul {
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    padding: 10px;
+    
+   
+    
+}
+.item1 ul li{
+    list-style: none;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+.item1 ul li a{
+    text-decoration: none;
+    color: black;
+}
+.item1 ul li :hover{
+    background-color:rgb(77, 39, 14)  ;
+    color: #fff;
+    border: 1px solid rgba(94, 56, 56, 0.863);
+ 
+    font-size: 1.3rem;
+}
+
+.item2{
+  display: grid;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  position: relative;
+  justify-self: center;
+  align-self: center;
+}
+.item2 .two{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.one img{
+    height: 500px;
+}
+.two img{
+    height: 500px; 
+}
+.item2 p{
+    position: absolute;
+    bottom: 50%;
+   
+    font-size: 2rem;
+    color: rgb(77, 39, 14);
+    background: white;
+    text-align: center;
+    width: 100%;
+}
+.item3,.item4,.item5,.item6,.item7{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+
+}
+.item3 img{
+    transition: all 3s;
+}
+.item3 img:hover{
+scale: 1.5;
+}
+.item4 img{
+    transition: all 3s;
+}
+.item4 img:hover{
+scale: 1.5;
+}
+.item5 img{
+    transition: all 3s;
+}
+.item5 img:hover{
+scale: 1.5;
+}
+.item6 img{
+    transition: all 3s;
+}
+.item6 img:hover{
+scale: 1.5;
+}
+.item7 img{
+    transition: all 3s;
+}
+.item7 img:hover{
+scale: 1.5;
+}
+
+.head{
+    text-align: center;
+    font-size: 3rem;
+    padding: 30px;
+}
+ .cards,.cards2{
+     display: flex; 
+     flex-wrap: wrap;
+     height: 100%;
+     width: 100%;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+}
+.cards img{
+    height: 200px;
+    width: 200px;
+}
+.cards2 img{
+    height: 200px;
+    width: 200px;
+}
+footer{
+    margin-top: 40px;
+    /* background-color: #29201660; */
+    background-color: rgb(221, 180, 104);
+
+    }
+   
+    .end {
+        color: rgb(10, 10, 10);
+        font-size: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        /* padding-bottom: 20px; */
+    }
+    .copy{
+        padding: 10px; 
+        font-size: 15px;
+    }
+
+  
+    .social{
+        display: flex;
+        justify-content: end;
+        font-size: 15px;
+        
+    }
+    .social a{
+        text-decoration: none;
+        color: rgb(19, 19, 19);
+        padding: 10px 20px;
+        border-right:1px solid gray ;
+    }
+ 
+    
+    @media screen and (max-width:900px){
+        .container,.wrap{
+width: 100vw;
+
+        }
+     
+
+   
+    .container{
+        width: 100%;
+        display: grid;
+    }
+    .item1{
+        justify-self:start;
+        
+    }
+    .item2{
+        justify-self:center;
+
+       
+    }
+    .head{
+        font-size: 2rem;
+    }
+    .cards,.cards2{
+        display: flex;
+        gap: 30px;
+        padding: 20px;
+    }
+    /* footer{
+        width: 100%;
+    } */
+  
+}
+@media(max-width:768px){
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+        
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+        
+    }
+    .nav-menu{
+       position: fixed;
+       left: -100%;
+       top:70px ;
+       gap: 0;
+       flex-direction: column;
+       background: rgb(253, 251, 251);
+       color: rgb(77, 39, 14);
+       width: 100%;
+       text-align: center;
+       transition: 0.3s;
+    }
+    .nav-item{
+margin:16px 0;
+
+    }
+    .nav-menu.active{
+        left: 0;
+        z-index: 99;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+         justify-content: center; 
+         align-items: center; 
+       } 
+       .imgbox{
+        padding: 30px;
+       }
+       .textbox{
+        width: 100%;
+        padding: 30px;
+       }
+       .next2 h2{
+font-size: 1.5rem;
+       }
+       .next h2{
+        font-size: 1.5rem;
+       }
+       .both h6{
+        font-size: 0.5rem; 
+     }
+    }
+
+@media screen and (max-width:670px){
+nav .logo{
+    font-size: 1rem;
+}
+.buy{
+    padding: 0;
+    margin: 0;
+
+}
+.head{
+        font-size: 2rem;
+    }
+.item1 ul{
+display: flex;
+gap: 0px;
+padding: 0;
+margin: 0;
+}  
+.item1 ul a{
+    font-size: 10px;
+    font-weight: 500;
+
+}  
+.item2{
+    display: grid;
+}
+
+.one{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.two{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+/* footer{
+    width: 100vw;
+} */
+}
+@media screen and (max-width:440px){
+    nav{
+        width: 100%;
+    }
+    .item1{
+        width: 100%;
+    }
+    .item1 ul li{
+        padding: 0;
+        
+       
+    }
+    .item1 ul {
+        width: 100%;
+        height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row;
+    text-align: center;
+padding: 20px 0;
+    
+   
+    
+}
+  
+    .item1 ul li a:hover{
+        color: rgb(255, 255, 255);
+        background:rgb(65, 5, 5);
+        font-size: 10px;
+    }
+    .head{
+        font-size: 1rem;
+    }
+    .one img{
+     height: 200px; 
+     width: 200px;  
+    }
+    .two img{
+     height: 200px; 
+     width: 200px;  
+    }
+    .item2 p{
+        font-size: 20px;
+        width: 200px;
+    }
+}
+
+    </style>
+
+</head>
+<body>
+   <div class="wrap">
+    <div class="container">
+        <nav class="navbar">
+            <a href="#" class="nav-branding">mens' avenue</a>
+            <ul class="nav-menu ">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">about</a>
+                </li>
+                <li class="nav-item">
+                    <a href="collection.html" class="nav-link">collections</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+        <div class="item1">
+        <ul>
+            <li><a href="#casual">casual wear</li></a>
+            <li><a href="#festive">festive wear</li></a>
+            <li><a href="#groom">groom wear</li></a>
+            <li><a href="#kid">kids wear</li></a>
+            <li><a href="#blaz">blazzers</li></a>
+        </ul>
+        </div>
+        <div class="item2">
+            <div class="one"><img src="assets/par3.avif" alt=""></div>
+            <div class="two"><img src="assets/par2.avif" alt=""></div>
+
+            <p>have a look at our unique collections</p>
+        </div>
+        <div class="item3" id="casual">
+            <div class="head">casual wear</div>
+            <div class="cards">
+            <div class="img1"><img src="assets/pc1.jpg" alt=""></div>
+            <div class="img2"><img src="assets/pc2.jpg" alt=""></div>
+            <div class="img3"><img src="assets/pc3.jpg" alt=""></div>
+            <div class="img4"><img src="assets/pc4.jpg" alt=""></div>
+            <div class="img5"><img src="assets/pc5.jpg" alt=""></div>
+            </div>
+            <div class="cards2">
+                <div class="img1"><img src="assets/pc7.jpg" alt=""></div>
+                <div class="img2"><img src="assets/6.jpg" alt=""></div>
+                <div class="img3"><img src="assets/casual2.jfif " alt=""></div>
+                <div class="img4"><img src="assets/pc9.jpg" alt=""></div>
+                <div class="img5"><img src="assets/pc10.jpg" alt=""></div> 
+            </div>
+        </div>
+        <div class="item4" id="festive">
+            <div class="head">festive wear</div>
+            <div class="cards">
+                <div class="img1"><img src="assets/fes6.jfif" alt=""></div>
+                <div class="img2"><img src="assets/fes7.jfif" alt=""></div>
+                <div class="img3"><img src="assets/fes8.jfif" alt=""></div>
+                <div class="img4"><img src="assets/fes9.jfif" alt=""></div>
+                <div class="img5"><img src="assets/fes10.jfif" alt=""></div>
+            </div>
+       
+        <div class="cards2">
+            <div class="img1"><img src="assets/fes1.jfif" alt=""></div>
+            <div class="img2"><img src="assets/fes2.jfif" alt=""></div>
+            <div class="img3"><img src="assets/fes3.jfif" alt=""></div>
+            <div class="img4"><img src="assets/fes4.jfif" alt=""></div>
+            <div class="img5"><img src="assets/fes5.jfif" alt=""></div> 
+        </div>
+        </div>
+        <div class="item5" id="groom">
+            <div class="head">groom wear</div>
+            <div class="cards">
+            <div class="img1"><img src="assets/g1.jfif" alt=""></div>
+            <div class="img2"><img src="assets/g2.jfif" alt=""></div>
+            <div class="img3"><img src="assets/g3.jfif" alt=""></div>
+            <div class="img4"><img src="assets/g4.jfif" alt=""></div>
+            <div class="img5"><img src="assets/g5.jfif" alt=""></div>
+        </div>
+        <div class="cards2">
+            <div class="img1"><img src="assets/g6.jfif" alt=""></div>
+            <div class="img2"><img src="assets/g7.jfif" alt=""></div>
+            <div class="img3"><img src="assets/groom2.jpg" alt=""></div>
+            <div class="img4"><img src="assets/groom3.jpg" alt=""></div>
+            <div class="img5"><img src="assets/groom1.jpg" alt=""></div> 
+        </div>
+        </div>
+        <div class="item6" id="kid">
+            <div class="head">kids wear</div>
+        <div class="cards">
+            <div class="img1"><img src="assets/k1.jfif" alt=""></div>
+            <div class="img2"><img src="assets/k2.jfif" alt=""></div>
+            <div class="img3"><img src="assets/k3.jfif" alt=""></div>
+            <div class="img4"><img src="assets/k4.jfif" alt=""></div>
+            <div class="img5"><img src="assets/k5.jfif" alt=""></div>
+        </div>
+        <div class="cards2">
+            <div class="img1"><img src="assets/k6.jfif" alt=""></div>
+            <div class="img2"><img src="assets/k7.jfif" alt=""></div>
+            <div class="img3"><img src="assets/kid5.jpg" alt=""></div>
+            <div class="img4"><img src="assets/kid3.jpg" alt=""></div>
+            <div class="img5"><img src="assets/kid2.jpg" alt=""></div> 
+        </div>
+        </div>
+        <div class="item7" id="blaz">
+            <div class="head">blazer</div>
+            <div class="cards">
+            <div class="img1"><img src="assets/pb1.jpg" alt=""></div>
+            <div class="img2"><img src="assets/pb2.jpg" alt=""></div>
+            <div class="img3"><img src="assets/b3.jfif" alt=""></div>
+            <div class="img4"><img src="assets/b4.jfif" alt=""></div>
+            <div class="img5"><img src="assets/pb3.jpg" alt=""></div>
+        </div>
+        <div class="cards2">
+            <div class="img1"><img src="assets/par3.avif" alt=""></div>
+            <div class="img2"><img src="assets/b6.jfif" alt=""></div>
+            <div class="img3"><img src="assets/pb3.jpg" alt=""></div>
+            <div class="img4"><img src="assets/b8.jfif" alt=""></div>
+            <div class="img5"><img src="assets/pb4.jpg" alt=""></div> 
+        </div>
+        </div>
+       
+    </div>
+   </div> 
+   <footer>
+    
+    <div class="end">
+        <div class="copy">
+            <p>&copy men's avenue,All Right Reserved.Designed by Asma</p>
+        </div>
+        <div class="social">
+
+            <a href="#">home</a>
+            <a href="#">cookies</a>
+            <a href="#">help</a>
+            <a href="#">FAQs</a>
+        </div>
+    </div>
+</footer>
+   <script src="java.js"></script>
+</body>
+</html>
